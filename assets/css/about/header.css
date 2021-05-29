@@ -1,0 +1,8 @@
+.header {
+    top: 40px;
+}
+
+.navbar__link,
+.control__icon {
+    color: #171F32;
+}

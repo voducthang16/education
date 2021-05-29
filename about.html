@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/icon.png">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/flex-grid.css">
+
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/topbar.css">
+    <link rel="stylesheet" href="assets/css/about/header.css">
+    <link rel="stylesheet" href="assets/css/about/homepage.css">
+    <link rel="stylesheet" href="assets/css/about/about.css">
+
+
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <button class="scroll-to-top btn">
+            <i class="fal fa-arrow-up"></i>
+        </button>
+        <!-- Start Topbar -->
+        <div class="topbar">
+            <div class="container wide">
+                <div class="row topbar__wrapper">
+                    <div class="col l-2">
+                        <div class="support-mail">
+                            <i class="support-mail-icon fal fa-envelope"></i>
+                            <a href="mailto:support@voducthang.com" class="support-mail-link">support@voducthang.com</a>
+                        </div>
+                    </div>
+                    <div class="col l-6">
+                        <div class="address">
+                            <i class="address-icon fal fa-map-marked-alt"></i>
+                            16 Phạm Văn Đồng, Thành phố Thủ Đức, Thành phố Hồ Chí Minh
+                        </div>
+                    </div>
+                    <div class="col l-2">
+                        <div class="login-register">
+                            <i class="login-register-icon fal fa-sign-in-alt"></i>
+                            <a class="login-register-link" href="">Login</a>/<a class="login-register-link" href="">Register</a>
+                        </div>
+                    </div>
+                    <div class="col l-2">
+                        <div class="topbar--cta">
+                            <button class="btn">NỘP ĐƠN NGAY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+
+        <!-- Start Header -->
+        <header class="header">
+            <div class="container wide">
+                <div class="row header__wrapper">
+                    <div class="col l-2 m-4 c-4">
+                        <a href="" class="header__link">
+                            <img src="assets/img/logo.png" alt="LOGO" class="header__logo">
+                        </a>
+                    </div>
+
+                    <div class="col l-6 l-o-1 hide-on-mobile-tablet">
+                        <nav class="navbar">
+                            <ul class="navbar__list">
+                                <li class="navbar__item">
+                                    <a href="index.html" class="navbar__link">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="" class="navbar__link active">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link">
+                                        Khóa học
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link">
+                                        Liên lạc
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col l-2 l-o-1 m-2 c-2 ml-auto">
+                        <ul class="header__control">
+                            <li class="control-item">
+                                <i class="control__icon fal fa-search"></i>
+                                <!-- Search Input -->
+                                <div class="search-wrapper">
+                                    <input type="text" class="search__control" placeholder="Nhập để tìm kiếm...">
+                                </div>
+                            </li>
+                            <li class="control-item">
+                                <i class="control__icon fal fa-cart-plus"></i>
+                                <!-- Cart -->
+                                <div class="cart-wrapper">
+                                    <h3 class="cart-wrapper__title">Sản phẩm đã thêm</h3>
+                                    <ul class="cart-wrapper__list">
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/1.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Chúa tể những chiếc nhẫn - The Lord of the Rings (1954 & 1955)</h4>
+                                                <p class="book__price">200.000đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">3</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/2.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Truyện cổ Grimm</h4>
+                                                <p class="book__price">680.000đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">1</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/3.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Phấn Đấu Từng Ngày Mai Này Gặt Hái</h4>
+                                                <p class="book__price">65.000đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">4</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/4.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Tư Duy Phản Biện</h4>
+                                                <p class="book__price">59.500đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">1</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/5.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Kỹ năng - Nghệ thuật nổi giận</h4>
+                                                <p class="book__price">42.500đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">1</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/6.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Thiết Kế Cuộc Đời Thịnh Vượng - Design a Prosperous Life (Phiên bản mới)</h4>
+                                                <p class="book__price">299.000đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">2</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="cart-wrapper--cta btn btn--size-s">Xem giỏ hàng</a>
+                                </div>
+                            </li>
+                            <li class="control-item hide-on-mobile-tablet">
+                                <i class="control__icon fal fa-user"></i>
+                                <div class="user">
+                                    <h3 class="user__title">Xin chào Võ Đức Thắng !!!</h3>
+                                    <ul class="user__list">
+                                        <li class="user__item">
+                                            <i class="fal fa-user-circle"></i>
+                                            Tài khoản của tôi
+                                        </li>
+                                        <li class="user__item">
+                                            <i class="fal fa-cog"></i>
+                                            Cài đặt
+                                        </li>
+                                        <li class="user__item">
+                                            <i class="fal fa-question-circle"></i>
+                                            Hỗ trợ
+                                        </li>
+                                        <li class="user__item">
+                                            <i class="fal fa-sign-out"></i>
+                                            Đăng xuất
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Responsive Navbar -->
+                    <label for="navbar__responsive" class="navbar__tablet-mobile l-0">
+                        <i class="fal fa-bars"></i>
+                    </label>
+
+                    <input type="checkbox" id="navbar__responsive">
+
+                    <label for="navbar__responsive" class="navbar__overlay"></label>
+
+                    <ul class="navbar__responsive-list">
+                        <div class="navbar__responsive-header">
+                            <div class="navbar__responsive-user">
+                                <img src="assets/img/avatar.jpg" alt="Avatar Image">
+                                <h3 class="navbar__responsive-name">Võ Đức Thắng</h3>
+                            </div>
+                            <label for="navbar__responsive" class="navbar__responsive-close">
+                                <i class="fal fa-times"></i>
+                            </label>
+                        </div>
+                        <li class="navbar__responsive-item mt-20">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-home"></i>
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="navbar__responsive-item">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-address-card"></i>
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li class="navbar__responsive-item">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-file-alt"></i>
+                                Khóa học
+                            </a>
+                        </li>
+                        <li class="navbar__responsive-item">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-blog"></i>
+                                Blog
+                            </a>
+                        </li>
+                        <li class="navbar__responsive-item">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-phone"></i>
+                                Liên lạc
+                            </a>
+                        </li>
+                        <li class="navbar__responsive-item">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Home Page-->
+        <section class="homepage">
+            <div class="homepage__wrapper">
+                <h1 class="homepage__title">Giới thiệu</h1>
+                <h3 class="homepage__link">
+                    <a href="index.html">Trang chủ</a> // 
+                    Giới thiệu
+                </h3>
+            </div>
+        </section>
+        <!-- End Home Page-->
+
+        <!-- Start About -->
+        <section class="about">
+
+        </section>
+        <!-- End About -->
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        const scrollToTop = document.querySelector('.scroll-to-top')
+        header.classList.toggle('sticky', window.scrollY > 24);
+        scrollToTop.classList.toggle('active', window.scrollY > 24);
+        scrollToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0
+            });
+        })
+    });
+    </script>
+</body>
+</html>

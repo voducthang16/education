@@ -23,9 +23,9 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/flex-grid.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/categories.css">
-    <link rel="stylesheet" href="assets/css/courses.css">
+    <link rel="stylesheet" href="assets/css/index/home.css">
+    <link rel="stylesheet" href="assets/css/index/categories.css">
+    <link rel="stylesheet" href="assets/css/index/courses.css">
     <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -49,12 +49,12 @@
                         <nav class="navbar">
                             <ul class="navbar__list">
                                 <li class="navbar__item">
-                                    <a href="#" class="navbar__link active">
+                                    <a href="" class="navbar__link active">
                                         Trang chủ
                                     </a>
                                 </li>
                                 <li class="navbar__item">
-                                    <a href="#" class="navbar__link">
+                                    <a href="about.html" class="navbar__link">
                                         Giới thiệu
                                     </a>
                                 </li>
@@ -582,7 +582,7 @@
                                             <i class="courses-item__rating-icon active fas fa-star"></i>
                                         </span>
                                         <h3>
-                                            <a href="#" class="course-item__title">Trí tuệ nhân tạo khởi nghiệp cơ bản</a>
+                                            <a href="#" class="course-item__title">Trí tuệ nhân tạo khởi nghiệp cơ bản 2021</a>
                                         </h3>
                                         <div class="courses-item-footer">
                                             <span class="courses-students">
@@ -646,7 +646,7 @@
                                             <i class="courses-item__rating-icon active fas fa-star"></i>
                                         </span>
                                         <h3>
-                                            <a href="#" class="course-item__title">Tự học Fullstack từ cơ bản tới nâng cao cho người mới bắn đầu</a>
+                                            <a href="#" class="course-item__title">Tự học Fullstack từ cơ bản tới nâng cao cho người mới bắt đầu</a>
                                         </h3>
                                         <div class="courses-item-footer">
                                             <span class="courses-students">
@@ -834,5 +834,26 @@
         <!-- End Footer -->
     </div>
     <script src="assets/js/main.js"></script>
+    <script>
+        // Scroll To Top
+        document.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            const scrollToTop = document.querySelector('.scroll-to-top')
+            header.classList.toggle('sticky', window.scrollY > 76);
+            scrollToTop.classList.toggle('active', window.scrollY > 76);
+            scrollToTop.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0
+                });
+            })
+            
+            const img = document.querySelector('.header__logo');
+            if (window.scrollY > 76) {
+                img.src = 'assets/img/logo.png';
+            } else {
+                img.src = 'assets/img/logo-white.png';
+            };
+        });
+    </script>
 </body>
 </html>

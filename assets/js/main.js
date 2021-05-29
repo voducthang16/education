@@ -55,25 +55,6 @@ document.addEventListener('click', e => {
     }
 });
 
-// Scroll To Top
-document.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    const scrollToTop = document.querySelector('.scroll-to-top')
-    header.classList.toggle('sticky', window.scrollY > 76);
-    scrollToTop.classList.toggle('active', window.scrollY > 76);
-    scrollToTop.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0
-        });
-    })
-    
-    const img = document.querySelector('.header__logo');
-    if (window.scrollY > 76) {
-        img.src = 'assets/img/logo.png';
-    } else {
-        img.src = 'assets/img/logo-white.png';
-    };
-});
 
 // FAQ
 const faqQuestions = document.querySelectorAll('.faq__question');
