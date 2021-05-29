@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/icon.png">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/flex-grid.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/categories.css">
+    <link rel="stylesheet" href="assets/css/courses.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <button class="scroll-to-top btn">
+            <i class="fal fa-arrow-up"></i>
+        </button>
+        <!-- Start Header -->
+        <header class="header">
+            <div class="container wide">
+                <div class="row header__wrapper">
+                    <div class="col l-2 m-4 c-4">
+                        <a href="" class="header__link">
+                            <img src="assets/img/logo-white.png" alt="LOGO" class="header__logo">
+                        </a>
+                    </div>
+
+                    <div class="col l-6 l-o-1 hide-on-mobile-tablet">
+                        <nav class="navbar">
+                            <ul class="navbar__list">
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link active">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link">
+                                        Khóa học
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#" class="navbar__link">
+                                        Liên lạc
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col l-2 l-o-1 m-2 c-2 ml-auto">
+                        <ul class="header__control">
+                            <li class="control-item">
+                                <i class="control__icon fal fa-search"></i>
+                                <!-- Search Input -->
+                                <div class="search-wrapper">
+                                    <input type="text" class="search__control" placeholder="Nhập để tìm kiếm...">
+                                </div>
+                            </li>
+                            <li class="control-item">
+                                <i class="control__icon fal fa-cart-plus"></i>
+                                <!-- Cart -->
+                                <div class="cart-wrapper">
+                                    <h3 class="cart-wrapper__title">Sản phẩm đã thêm</h3>
+                                    <ul class="cart-wrapper__list">
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/1.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Chúa tể những chiếc nhẫn - The Lord of the Rings (1954 & 1955)</h4>
+                                                <p class="book__price">200.000đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">3</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/2.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Truyện cổ Grimm</h4>
+                                                <p class="book__price">680.000đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">1</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/3.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Phấn Đấu Từng Ngày Mai Này Gặt Hái</h4>
+                                                <p class="book__price">65.000đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">4</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/4.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Tư Duy Phản Biện</h4>
+                                                <p class="book__price">59.500đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">1</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/5.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Kỹ năng - Nghệ thuật nổi giận</h4>
+                                                <p class="book__price">42.500đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">1</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                        <li class="cart-wrapper__item">
+                                            <span>
+                                                <img src="assets/img/cart/6.jpg" alt="Book Banner" class="book__img">
+                                            </span>
+                                            <div class="book">
+                                                <h4 class="book__name">Thiết Kế Cuộc Đời Thịnh Vượng - Design a Prosperous Life (Phiên bản mới)</h4>
+                                                <p class="book__price">299.000đ</p>
+                                                <span class="book_x">x</span>
+                                                <p class="book__quantity">2</p>
+                                                <p class="book__delete">Xóa</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="cart-wrapper--cta btn btn--size-s">Xem giỏ hàng</a>
+                                </div>
+                            </li>
+                            <li class="control-item hide-on-mobile-tablet">
+                                <i class="control__icon fal fa-user"></i>
+                                <div class="user">
+                                    <h3 class="user__title">Xin chào Võ Đức Thắng !!!</h3>
+                                    <ul class="user__list">
+                                        <li class="user__item">
+                                            <i class="fal fa-user-circle"></i>
+                                            Tài khoản của tôi
+                                        </li>
+                                        <li class="user__item">
+                                            <i class="fal fa-cog"></i>
+                                            Cài đặt
+                                        </li>
+                                        <li class="user__item">
+                                            <i class="fal fa-question-circle"></i>
+                                            Hỗ trợ
+                                        </li>
+                                        <li class="user__item">
+                                            <i class="fal fa-sign-out"></i>
+                                            Đăng xuất
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Responsive Navbar -->
+                    <label for="navbar__responsive" class="navbar__tablet-mobile l-0">
+                        <i class="fal fa-bars"></i>
+                    </label>
+
+                    <input type="checkbox" id="navbar__responsive">
+
+                    <label for="navbar__responsive" class="navbar__overlay"></label>
+
+                    <ul class="navbar__responsive-list">
+                        <div class="navbar__responsive-header">
+                            <div class="navbar__responsive-user">
+                                <img src="assets/img/avatar.jpg" alt="Avatar Image">
+                                <h3 class="navbar__responsive-name">Võ Đức Thắng</h3>
+                            </div>
+                            <label for="navbar__responsive" class="navbar__responsive-close">
+                                <i class="fal fa-times"></i>
+                            </label>
+                        </div>
+                        <li class="navbar__responsive-item mt-20">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-home"></i>
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="navbar__responsive-item">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-address-card"></i>
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li class="navbar__responsive-item">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-file-alt"></i>
+                                Khóa học
+                            </a>
+                        </li>
+                        <li class="navbar__responsive-item">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-blog"></i>
+                                Blog
+                            </a>
+                        </li>
+                        <li class="navbar__responsive-item">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-phone"></i>
+                                Liên lạc
+                            </a>
+                        </li>
+                        <li class="navbar__responsive-item">
+                            <a href="#" class="navbar__responsive-link">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- ====================== -->
+
+        <!-- Start Home -->
+        <section class="home">
+            <div class="container wide">
+                <div class="row home__wrapper">
+                    <div class="col l-8 l-o-2 m-12 c-12">
+                        <div class="home__content">
+                            <h2 class="home__sub-title">
+                                Bắt đầu học ngay hôm nay
+                            </h2>
+                            <h1 class="home__title">
+                                Khóa học trực tuyến từ các chuyên gia hàng đầu
+                            </h1>
+                            <a href="#" class="home__cta btn btn--size-s">
+                                Tìm khóa học
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12 mt-200 hide-on-mobile-tablet">
+                        <div class="row">
+                            <div class="col l-4 m-6 c-12">
+                                <div class="features">
+                                    <img src="assets/img/features/3.png" alt="Features Icon" class="features__img">
+                                    <div class="features-body">
+                                        <h4 class="features__title">5,320 khóa học trực tuyến</h4>
+                                        <p class="features__desc">Tận hưởng nhiều chủ đề mới mẻ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12 mt-16-mobile">
+                                <div class="features">
+                                    <img src="assets/img/features/2.png" alt="Features Icon" class="features__img">
+                                    <div class="features-body">
+                                        <h4 class="features__title">Hướng dẫn của chuyên gia</h4>
+                                        <p class="features__desc">Bài giảng chất lượng</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12 m-o-3 mt-16-tablet mt-16-mobile">
+                                <div class="features">
+                                    <img src="assets/img/features/1.png" alt="Features Icon" class="features__img">
+                                    <div class="features-body">
+                                        <h4 class="features__title">Quyền truy cập trọn đời</h4>
+                                        <p class="features__desc">Học theo lịch trình của bạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Home -->
+        <div class="container wide l-0 hide-on-pc">
+            <div class="row mt-60-tablet mt-120-mobile">
+                <div class="col l-12 m-12 c-12">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
+                            <div class="features">
+                                <img src="assets/img/features/3.png" alt="Features Icon" class="features__img">
+                                <div class="features-body">
+                                    <h4 class="features__title">5,320 khóa học trực tuyến</h4>
+                                    <p class="features__desc">Tận hưởng nhiều chủ đề mới mẻ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12 mt-16-tablet mt-16-mobile">
+                            <div class="features">
+                                <img src="assets/img/features/2.png" alt="Features Icon" class="features__img">
+                                <div class="features-body">
+                                    <h4 class="features__title">Hướng dẫn của chuyên gia</h4>
+                                    <p class="features__desc">Bài giảng chất lượng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12 mt-16-tablet mt-16-mobile">
+                            <div class="features">
+                                <img src="assets/img/features/1.png" alt="Features Icon" class="features__img">
+                                <div class="features-body">
+                                    <h4 class="features__title">Quyền truy cập trọn đời</h4>
+                                    <p class="features__desc">Học theo lịch trình của bạn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ====================== -->
+
+        <!-- Start Categories -->
+        <section class="categories">
+            <div class="container wide">
+                <div class="row cate__wrapper">
+                    <div class="col l-8 l-o-2 m-12 c-12">
+                        <div class="cate-heading">
+                            <h3 class="cate__sub-title">Danh mục hàng đầu</h3>
+                            <h2 class="cate__title">Những danh mục trực tuyến phổ biến</h2>
+                        </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                        <div class="row cate-body">
+                            <div class="col l-4 m-6 c-12">
+                                <div class="cate-item mb-8-mobile mb-24 mb-16-tablet">
+                                    <img src="assets/img/categories/1.jpg" alt="Categories Image" class="cate__img">
+                                    <div class="cate-content">
+                                        <img src="assets/img/categories/icon/1.png" alt="Categories Icon" class="cate-content__img">
+                                        <div class="cate-content__body">
+                                            <a href="#" class="cate-content__link cate-content__title">
+                                                Giáo dục phổ thông
+                                            </a>
+                                            <h4 class="cate-content__desc">02 khóa học</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="cate-item mb-8-mobile mb-24 mb-16-tablet">
+                                    <img src="assets/img/categories/2.jpg" alt="Categories Image" class="cate__img">
+                                    <div class="cate-content">
+                                        <img src="assets/img/categories/icon/2.png" alt="Categories Icon" class="cate-content__img">
+                                        <div class="cate-content__body">
+                                            <a href="#" class="cate-content__link cate-content__title">
+                                                Khoa học máy tính
+                                            </a>
+                                            <h4 class="cate-content__desc">06 khóa học</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="cate-item mb-8-mobile mb-24 mb-16-tablet">
+                                    <img src="assets/img/categories/3.jpg" alt="Categories Image" class="cate__img">
+                                    <div class="cate-content">
+                                        <img src="assets/img/categories/icon/3.png" alt="Categories Icon" class="cate-content__img">
+                                        <div class="cate-content__body">
+                                            <a href="#" class="cate-content__link cate-content__title">
+                                                Xây dựng dân dụng
+                                            </a>
+                                            <h4 class="cate-content__desc">01 khóa học</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="cate-item mb-8-mobile">
+                                    <img src="assets/img/categories/4.jpg" alt="Categories Image" class="cate__img">
+                                    <div class="cate-content">
+                                        <img src="assets/img/categories/icon/4.png" alt="Categories Icon" class="cate-content__img">
+                                        <div class="cate-content__body">
+                                            <a href="#" class="cate-content__link cate-content__title">
+                                                Trí tuệ nhân tạo
+                                            </a>
+                                            <h4 class="cate-content__desc">03 khóa học</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="cate-item mb-8-mobile">
+                                    <img src="assets/img/categories/5.jpg" alt="Categories Image" class="cate__img">
+                                    <div class="cate-content">
+                                        <img src="assets/img/categories/icon/5.png" alt="Categories Icon" class="cate-content__img">
+                                        <div class="cate-content__body">
+                                            <a href="#" class="cate-content__link cate-content__title">
+                                                Nghiên cứu kinh doanh
+                                            </a>
+                                            <h4 class="cate-content__desc">02 khóa học</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="cate-item">
+                                    <img src="assets/img/categories/6.jpg" alt="Categories Image" class="cate__img">
+                                    <div class="cate-content">
+                                        <img src="assets/img/categories/icon/6.png" alt="Categories Icon" class="cate-content__img">
+                                        <div class="cate-content__body">
+                                            <a href="#" class="cate-content__link cate-content__title">
+                                                Kỹ thuật máy tính
+                                            </a>
+                                            <h4 class="cate-content__desc">04 khóa học</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 l-o-3 m-8 m-o-2 c-8 c-o-2">
+                        <div class="cate--cta">
+                            <a href="#" class="btn mt-24">Xem tất cả các danh mục</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Categories -->
+
+        <!-- ====================== -->
+
+        <!-- Start Courses -->
+        <section class="courses">
+            <div class="container wide">
+                <div class="row courses__wrapper">
+                    <div class="col l-8 l-o-2 m-12 c-12">
+                        <div class="courses-heading">
+                            <h3 class="courses__sub-title">Chọn khóa học</h3>
+                            <h2 class="courses__title">Khám phá các khóa học phổ biến</h2>
+                        </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-4 m-6 c-12">
+                                <div class="courses-item mb-24 mb-16-tablet mb-8-mobile">
+                                    <div class="courses-item__img">
+                                        <a href="#">
+                                            <img src="assets/img/courses/1.jpg" alt="Courses Image">
+                                        </a>
+                                        <button class="courses__price btn">Miễn phí</button>
+                                    </div>
+                                    <div class="courses-item-body">
+                                        <span class="courses-item__rating">
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon fas fa-star"></i>
+                                        </span>
+                                        <h3>
+                                            <a href="#" class="course-item__title">Xây dựng chiến lược phát triển thể dục</a>
+                                        </h3>
+                                        <div class="courses-item-footer">
+                                            <span class="courses-students">
+                                                <i class="fas fa-users"></i>
+                                                240 Đang học
+                                            </span>
+                                            <span class="courses__lessons">
+                                                <i class="fas fa-file"></i>
+                                                6 Phần
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="courses-item mb-24 mb-16-tablet mb-8-mobile">
+                                    <div class="courses-item__img">
+                                        <a href="#">
+                                            <img src="assets/img/courses/2.jpg" alt="Courses Image">
+                                        </a>
+                                        <button class="courses__price btn">500.000đ</button>
+                                    </div>
+                                    <div class="courses-item-body">
+                                        <span class="courses-item__rating">
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon fas fa-star"></i>
+                                        </span>
+                                        <h3>
+                                            <a href="#" class="course-item__title">Facebook Marketing 5.0 - Tiếp thị trên Facebook chuyên nghiệp phiên bản 5.0</a>
+                                        </h3>
+                                        <div class="courses-item-footer">
+                                            <span class="courses-students">
+                                                <i class="fas fa-users"></i>
+                                                300 Đang học
+                                            </span>
+                                            <span class="courses__lessons">
+                                                <i class="fas fa-file"></i>
+                                                8 Phần
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="courses-item mb-24 mb-16-tablet mb-8-mobile">
+                                    <div class="courses-item__img">
+                                        <a href="#">
+                                            <img src="assets/img/courses/4.jpg" alt="Courses Image">
+                                        </a>
+                                        <button class="courses__price btn">Miễn phí</button>
+                                    </div>
+                                    <div class="courses-item-body">
+                                        <span class="courses-item__rating">
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                        </span>
+                                        <h3>
+                                            <a href="#" class="course-item__title">Công thức làm sốt nướng - lẩu cho người kinh doanh nhà hàng, quán ăn</a>
+                                        </h3>
+                                        <div class="courses-item-footer">
+                                            <span class="courses-students">
+                                                <i class="fas fa-users"></i>
+                                                340 Đang học
+                                            </span>
+                                            <span class="courses__lessons">
+                                                <i class="fas fa-file"></i>
+                                                5 Phần
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="courses-item mb-16-tablet mb-8-mobile">
+                                    <div class="courses-item__img">
+                                        <a href="#">
+                                            <img src="assets/img/courses/3.jpg" alt="Courses Image">
+                                        </a>
+                                        <button class="courses__price btn">700.000đ</button>
+                                    </div>
+                                    <div class="courses-item-body">
+                                        <span class="courses-item__rating">
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                        </span>
+                                        <h3>
+                                            <a href="#" class="course-item__title">Trí tuệ nhân tạo khởi nghiệp cơ bản</a>
+                                        </h3>
+                                        <div class="courses-item-footer">
+                                            <span class="courses-students">
+                                                <i class="fas fa-users"></i>
+                                                500 Đang học
+                                            </span>
+                                            <span class="courses__lessons">
+                                                <i class="fas fa-file"></i>
+                                                10 Phần
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="courses-item mb-16-tablet mb-8-mobile">
+                                    <div class="courses-item__img">
+                                        <a href="#">
+                                            <img src="assets/img/courses/5.jpg" alt="Courses Image">
+                                        </a>
+                                        <button class="courses__price btn">299.999đ</button>
+                                    </div>
+                                    <div class="courses-item-body">
+                                        <span class="courses-item__rating">
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon fas fa-star"></i>
+                                        </span>
+                                        <h3>
+                                            <a href="#" class="course-item__title">Các nguyên tắc cơ bản về máy tính Cơ bản về khởi động tối ưu</a>
+                                        </h3>
+                                        <div class="courses-item-footer">
+                                            <span class="courses-students">
+                                                <i class="fas fa-users"></i>
+                                                120 Đang học
+                                            </span>
+                                            <span class="courses__lessons">
+                                                <i class="fas fa-file"></i>
+                                                4 Phần
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <div class="courses-item">
+                                    <div class="courses-item__img">
+                                        <a href="#">
+                                            <img src="assets/img/courses/6.jpg" alt="Courses Image">
+                                        </a>
+                                        <button class="courses__price btn">999.999đ</button>
+                                    </div>
+                                    <div class="courses-item-body">
+                                        <span class="courses-item__rating">
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                            <i class="courses-item__rating-icon active fas fa-star"></i>
+                                        </span>
+                                        <h3>
+                                            <a href="#" class="course-item__title">Tự học Fullstack từ cơ bản tới nâng cao cho người mới bắn đầu</a>
+                                        </h3>
+                                        <div class="courses-item-footer">
+                                            <span class="courses-students">
+                                                <i class="fas fa-users"></i>
+                                                700 Đang học
+                                            </span>
+                                            <span class="courses__lessons">
+                                                <i class="fas fa-file"></i>
+                                                16 Phần
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Courses -->
+
+        <!-- ====================== -->
+
+        <!-- Start FAQ -->
+        <section class="faq">
+            <div class="container wide">
+                <div class="row faq__wrapper">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="faq__content">
+                            <h2 class="faq__title">Câu hỏi thường gặp</h2>
+                            <ul class="faq__list">
+                                <li class="faq__item">
+                                    <p class="faq__question">
+                                        <i class="faq__item-icon fal fa-arrow-down"></i>
+                                        Nếu có thắc mắc trong khóa học, tôi có thể hỏi ai?
+                                    </p>
+                                    <p class="faq__answer">
+                                        Bạn có thể hỏi trực tiếp giảng viên bạn đang theo học hoặc các trợ giảng đang trực tuyến về ngành học của bạn.
+                                    </p>
+                                </li>
+                                <li class="faq__item">
+                                    <p class="faq__question">
+                                        <i class="faq__item-icon fal fa-arrow-down"></i>
+                                        Việc học online liệu có hiệu quả ?
+                                    </p>
+                                    <p class="faq__answer">
+                                        Các khóa học trực tuyến của chúng tôi đều mang tính thực tiễn cao, áp dụng được ngay. Khi học trực tuyến tại <b>THANGVD</b> bạn sẽ:
+                                        <br>Tiết kiệm và linh hoạt về thời gian.
+                                        <br>Tiết kiệm chi phí và công sức.
+                                    </p>
+                                </li>
+                                <li class="faq__item">
+                                    <p class="faq__question">
+                                        <i class="faq__item-icon fal fa-arrow-down"></i>
+                                        Có thể tải khóa học về máy được không?
+                                    </p>
+                                    <p class="faq__answer">
+                                        Để "Bảo vệ quyền lợi khách hàng", chúng tôi không hỗ trợ cũng như không khuyến khích học viên tải nội dung bài học, nhằm giảm thiểu nguy cơ khóa học bị phát tán trái phép.
+                                        <br><b>Hy vọng bạn thông cảm!</b>
+                                    </p>
+                                </li>
+                                <li class="faq__item">
+                                    <p class="faq__question">
+                                        <i class="faq__item-icon fal fa-arrow-down"></i>
+                                        Có thể học trước rồi trả tiền được không?
+                                    </p>
+                                    <p class="faq__answer">
+                                        Bạn phải thanh toán trước mới học được khóa học.
+                                        <br> Chúng tôi có <b>chính sách hoàn học phí</b> nếu bạn không hài lòng chất lượng của khóa học.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="faq__ytb">
+                            <div class="faq__ytb-btn btn">
+                                <i class="faq__ytb-icon fas fa-triangle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End FAQ -->
+
+        <!-- ====================== -->
+
+        <!-- Start Footer -->
+        <footer class="footer">
+            <div class="container wide">
+                <div class="row footer__wrapper">
+                    <div class="col l-3 m-6 c-12 mb-16-tablet mb-8-mobile">
+                        <img src="assets/img/logo-white.png" alt="Footer Image" class="footer-img">
+                        <p class="footer-content">
+                            <b>THANGVD</b> là nơi học trực tuyến chất lượng.
+                            <br> <br> Các khoá học được đầu tư kỹ lưỡng từ nội dung tới chất lượng hình ảnh và âm thanh.
+                        </p>
+                        <span class="footer-social mt-24">
+                            <a href="#" class="footer-social__link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <i class="fab fa-spotify"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col l-3 m-6 c-12 mb-16-tablet mb-8-mobile">
+                        <h3 class="footer__title">
+                            Địa chỉ
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <i class="footer-list__item-icon fal fa-map-marked-alt"></i>
+                                <span>16 Phạm Văn Đồng, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</span>
+                            </li>
+                            <li class="footer-list__item">
+                                <i class="footer-list__item-icon fal fa-phone-volume"></i>
+                                <a href="tel:+843612041613">0361204613</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <i class="footer-list__item-icon fal fa-envelope"></i>
+                                <a href="mailto:support@voducthang.com">support@voducthang.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-6 c-12 mb-8-mobile">
+                        <h3 class="footer__title">
+                            Theo dõi chúng tôi
+                        </h3>
+                        <p class="footer-content">
+                            Nhập email để đăng ký nhận những thông tin hữu ích về học tập từ THANGVD.
+                        </p>
+                        <input type="text" class="footer-form-control" placeholder="Email của bạn ...">
+                        <button class="btn footer-form-submit btn--size-m">Đăng ký</button>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <h3 class="footer__title">
+                            Bài viết gần đây
+                        </h3>
+                        <div class="recent-post">
+                            <img src="assets/img/footer/1.jpg" alt="Footer Image">
+                            <div class="recent-post__wrapper">
+                                <a href="#" class="recent-post__title">
+                                    Tất cả đặc sản Việt Nam sẽ 'lên sàn' thương mại điện tử
+                                </a>
+                                <span class="recent-post-date">
+                                    <i class="fal fa-calendar-week"></i>
+                                    Thứ ba, 25/5/2021
+                                </span>
+                            </div>
+                        </div>
+                        <div class="recent-post mt-24">
+                            <img src="assets/img/footer/2.jpg" alt="Footer Image">
+                            <div class="recent-post__wrapper">
+                                <a href="#" class="recent-post__title">
+                                    Ứng dụng công nghệ đưa nông sản ra thế giới
+                                </a>
+                                <span class="recent-post-date">
+                                    <i class="fal fa-calendar-week"></i>
+                                    Thứ hai, 24/5/2021
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer__author">
+                    <div class="col l-12 m-12 c-12">
+                        <p>
+                            &#169; 2021 All Rights Reserved. <br> Developed By <a href="">Võ Đức Thắng</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
