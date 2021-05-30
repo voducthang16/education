@@ -12,7 +12,7 @@
 
     display: flex;
 
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .login-register-icon,
@@ -28,7 +28,7 @@
 
     text-decoration: none;
 
-    transition: all ease 0.2s;
+    transition: all ease 0.4s;
 }
 
 .login-register-link:hover,
@@ -36,32 +36,18 @@
     color: var(--primary-color);
 }
 
-.support-mail::after {
-    position: absolute;
-    top: -12px;
-    right: -52px;
-
-    z-index: 1;
-
-    display: block;
-    height: 40px;
-    content: "";
-
-    border-right: 1px solid var(--white-color);
-}
-
 .address {
     display: flex;
     margin-left: 48px;
 
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .login-register {
     display: flex;
     justify-content: center;
 
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .topbar--cta > .btn {
