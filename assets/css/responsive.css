@@ -31,7 +31,6 @@
     right: 0;
     bottom: 0;
 
-    /* width: 320px; */
     width: 100%;
 
     list-style: none;
@@ -178,6 +177,11 @@
         margin-top: 100px;
     }
     /* END HOME */
+    
+    /* START ABOUT */
+    .review__rating-icon {
+        font-size: 1.2rem;
+    }
 }
 
 /* Mobile */
@@ -233,4 +237,14 @@
         padding: 100px 8px 60px 8px;
     }
     /* END HOME */
+
+    /* START ABOUT */
+    .homepage__title {
+        font-size: 3rem;
+    }
+
+    .homepage__link {
+        font-size: 1.6rem;
+    }
+    /* END ABOUT */
 }

@@ -2,6 +2,7 @@
     top: 40px;
 }
 
+.header .navbar__tablet-mobile,
 .navbar__link,
 .control__icon {
     color: #171F32;
