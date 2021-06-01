@@ -132,7 +132,7 @@
                                     <ul class="cart-wrapper__list">
                                         <li class="cart-wrapper__item">
                                             <span>
-                                                <img src="assets/img/cart/1.jpg" alt="Book Banner" class="book__img">
+                                                <img src="assets/img/index/cart/1.jpg" alt="Book Banner" class="book__img">
                                             </span>
                                             <div class="book">
                                                 <h4 class="book__name">Chúa tể những chiếc nhẫn - The Lord of the Rings (1954 & 1955)</h4>
@@ -144,7 +144,7 @@
                                         </li>
                                         <li class="cart-wrapper__item">
                                             <span>
-                                                <img src="assets/img/cart/2.jpg" alt="Book Banner" class="book__img">
+                                                <img src="assets/img/index/cart/2.jpg" alt="Book Banner" class="book__img">
                                             </span>
                                             <div class="book">
                                                 <h4 class="book__name">Truyện cổ Grimm</h4>
@@ -156,7 +156,7 @@
                                         </li>
                                         <li class="cart-wrapper__item">
                                             <span>
-                                                <img src="assets/img/cart/3.jpg" alt="Book Banner" class="book__img">
+                                                <img src="assets/img/index/cart/3.jpg" alt="Book Banner" class="book__img">
                                             </span>
                                             <div class="book">
                                                 <h4 class="book__name">Phấn Đấu Từng Ngày Mai Này Gặt Hái</h4>
@@ -168,7 +168,7 @@
                                         </li>
                                         <li class="cart-wrapper__item">
                                             <span>
-                                                <img src="assets/img/cart/4.jpg" alt="Book Banner" class="book__img">
+                                                <img src="assets/img/index/cart/4.jpg" alt="Book Banner" class="book__img">
                                             </span>
                                             <div class="book">
                                                 <h4 class="book__name">Tư Duy Phản Biện</h4>
@@ -180,7 +180,7 @@
                                         </li>
                                         <li class="cart-wrapper__item">
                                             <span>
-                                                <img src="assets/img/cart/5.jpg" alt="Book Banner" class="book__img">
+                                                <img src="assets/img/index/cart/5.jpg" alt="Book Banner" class="book__img">
                                             </span>
                                             <div class="book">
                                                 <h4 class="book__name">Kỹ năng - Nghệ thuật nổi giận</h4>
@@ -192,7 +192,7 @@
                                         </li>
                                         <li class="cart-wrapper__item">
                                             <span>
-                                                <img src="assets/img/cart/6.jpg" alt="Book Banner" class="book__img">
+                                                <img src="assets/img/index/cart/6.jpg" alt="Book Banner" class="book__img">
                                             </span>
                                             <div class="book">
                                                 <h4 class="book__name">Thiết Kế Cuộc Đời Thịnh Vượng - Design a Prosperous Life (Phiên bản mới)</h4>
@@ -781,7 +781,7 @@
                             Bài viết gần đây
                         </h3>
                         <div class="recent-post">
-                            <img src="assets/img/footer/1.jpg" alt="Footer Image">
+                            <img src="assets/img/index/footer/1.jpg" alt="Footer Image">
                             <div class="recent-post__wrapper">
                                 <a href="#" class="recent-post__title">
                                     Tất cả đặc sản Việt Nam sẽ 'lên sàn' thương mại điện tử
@@ -793,7 +793,7 @@
                             </div>
                         </div>
                         <div class="recent-post mt-24">
-                            <img src="assets/img/footer/2.jpg" alt="Footer Image">
+                            <img src="assets/img/index/footer/2.jpg" alt="Footer Image">
                             <div class="recent-post__wrapper">
                                 <a href="#" class="recent-post__title">
                                     Ứng dụng công nghệ đưa nông sản ra thế giới
@@ -819,19 +819,17 @@
     </div>
     <script src="assets/js/main.js"></script>
     <script>
-        window.visualViewport.addEventListener('resize', () => {
-            document.addEventListener('scroll', () => {
-                const header = document.querySelector('.header');
-                const scrollToTop = document.querySelector('.scroll-to-top')
-                header.classList.toggle('sticky', window.scrollY > 24 && window.innerWidth > 1023);
-                scrollToTop.classList.toggle('active', window.scrollY > 24);
-                scrollToTop.addEventListener('click', () => {
-                    window.scrollTo({
-                        top: 0
-                    });
-                })
-            });
-        })
+        document.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            const scrollToTop = document.querySelector('.scroll-to-top')
+            header.classList.toggle('sticky', window.scrollY > 24);
+            scrollToTop.classList.toggle('active', window.scrollY > 24);
+            scrollToTop.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0
+                });
+            })
+        });
     </script>
 </body>
 </html>
