@@ -39,5 +39,5 @@
 }
 
 .homepage__link > a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color)!important;
 }
