@@ -183,3 +183,16 @@
     color: var(--text-color) !important;
     cursor: default;
 }
+
+.course-filter {
+    opacity: 1;
+    transition: all ease 0.4s;
+    transform: scale(1);
+}
+
+.course-filter.hide {
+    opacity: 0;
+    transition: all ease 0.4s;
+    transform: scale(0.001);
+    display: none;
+}

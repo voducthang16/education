@@ -99,7 +99,7 @@
                                     </a>
                                 </li>
                                 <li class="navbar__item">
-                                    <a href="#" class="navbar__link">
+                                    <a href="blog.html" class="navbar__link">
                                         Blog
                                     </a>
                                 </li>
@@ -268,7 +268,7 @@
                             </a>
                         </li>
                         <li class="navbar__responsive-item">
-                            <a href="#" class="navbar__responsive-link">
+                            <a href="blog.html" class="navbar__responsive-link">
                                 <i class="fas fa-blog"></i>
                                 Blog
                             </a>
@@ -307,14 +307,14 @@
         <section class="courses">
             <div class="container wide">
                 <div class="courses__heading">
-                    <h4 class="courses__type active">TẤT CẢ</h4>
-                    <h4 class="courses__type">KHOA HỌC</h4>
-                    <h4 class="courses__type">KINH DOANH</h4>
-                    <h4 class="courses__type">NHÂN LỰC</h4>
-                    <h4 class="courses__type">BẰNG CẤP</h4>
+                    <h4 data-filter="all" class="courses__type active">TẤT CẢ</h4>
+                    <h4 data-filter="kh" class="courses__type">KHOA HỌC</h4>
+                    <h4 data-filter="kd" class="courses__type">KINH DOANH</h4>
+                    <h4 data-filter="nl" class="courses__type">NHÂN LỰC</h4>
+                    <h4 data-filter="bc" class="courses__type">BẰNG CẤP</h4>
                 </div>
                 <div class="row">
-                    <div class="col l-4 m-6 c-12">
+                    <div class="course-filter kh col l-4 m-6 c-12">
                         <div class="courses-item mb-16-tablet mb-8-mobile">
                             <img src="assets/img/courses/course/1.jpg" alt="Courses Image" class="course__img">
                             <div class="course-body">
@@ -345,7 +345,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-4 m-6 c-12">
+                    <div class="course-filter kd col l-4 m-6 c-12">
                         <div class="courses-item mb-16-tablet mb-8-mobile mb-24">
                             <img src="assets/img/courses/course/1.jpg" alt="Courses Image" class="course__img">
                             <div class="course-body">
@@ -376,7 +376,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-4 m-6 c-12">
+                    <div class="course-filter nl col l-4 m-6 c-12">
                         <div class="courses-item mb-16-tablet mb-8-mobile mb-24">
                             <img src="assets/img/courses/course/1.jpg" alt="Courses Image" class="course__img">
                             <div class="course-body">
@@ -407,7 +407,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-4 m-6 c-12">
+                    <div class="course-filter bc col l-4 m-6 c-12">
                         <div class="courses-item mb-16-tablet mb-8-mobile mb-24">
                             <img src="assets/img/courses/course/1.jpg" alt="Courses Image" class="course__img">
                             <div class="course-body">
@@ -438,7 +438,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-4 m-6 c-12">
+                    <div class="course-filter bc nl kd col l-4 m-6 c-12">
                         <div class="courses-item mb-16-tablet">
                             <img src="assets/img/courses/course/1.jpg" alt="Courses Image" class="course__img">
                             <div class="course-body">
@@ -469,7 +469,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-4 m-6 c-12">
+                    <div class="course-filter kh kd nl col l-4 m-6 c-12">
                         <div class="courses-item">
                             <img src="assets/img/courses/course/1.jpg" alt="Courses Image" class="course__img">
                             <div class="course-body">
@@ -633,6 +633,7 @@
         <!-- End Footer -->
     </div>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/filter-courses.js"></script>
     <script>
         document.addEventListener('scroll', () => {
             const header = document.querySelector('.header');
