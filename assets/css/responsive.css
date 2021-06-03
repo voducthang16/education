@@ -106,6 +106,10 @@
         font-size: 5rem;
     }
 
+    .mt-200 {
+        margin-top: 110px;
+    }
+
     .hide-on-pc {
         display: none;
         
@@ -203,8 +207,12 @@
         display:none;
     }
 
+    .mlr-8px {
+        margin: 0 8px;
+    }
+
     .mt-120-mobile {
-        margin-top: 120px;
+        margin-top: 270px;
     }
 
     .mt-8-mobile {
@@ -231,6 +239,10 @@
     .header__wrapper {
         padding-left: 8px;
         padding-right: 12px;
+    }
+
+    .categories {
+        margin-top: 80px;
     }
 
     .footer-social { 
@@ -267,6 +279,10 @@
     /* START BLOG */
     .sidebar-item + .sidebar-item {
         margin-top: 8px;
+    }
+
+    .post__meta-item + .post__meta-item {
+        margin-left: 0px;
     }
 
     .post + .post {
