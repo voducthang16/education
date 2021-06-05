@@ -31,7 +31,7 @@ lessons.forEach((lesson, index) => {
         } else {
             this.classList.add('active');
             pane.classList.add('active');
-            pane.style.maxHeight = `${height + 32}px`;
+            pane.style.maxHeight = `${height + 44.8}px`;
         }
 
         lessons.forEach(lesson => {
