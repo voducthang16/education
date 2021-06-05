@@ -54,7 +54,7 @@
 }
 
 .faq__question.active .faq__item-icon {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
     will-change: transform;
 }
 

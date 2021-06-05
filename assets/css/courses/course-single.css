@@ -1,0 +1,247 @@
+body {
+    background-color: #F3F8F9;
+}
+
+.course {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.course-header {
+    text-align: center;
+}
+
+.course-header__title {
+    padding: 16px 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #eee;
+
+    color: var(--text-color);
+    background-color: var(--white-color);
+
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    transition: all ease 0.2s;
+}
+
+.course-header__title.active,
+.course-header__title:hover {
+    border: 1px solid var(--primary-color);
+
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.course-header__title:hover {
+    cursor: pointer;
+}
+
+.tab-item {
+    display: none;
+    padding: 36px ;
+    background-color: var(--white-color);
+    
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.tab-item.active {
+    display: block;
+    opacity: 1;
+    animation: grow ease 0.4s;
+}
+
+.overview-list__title,
+.tab-item__title {
+    margin-bottom: 24px;
+
+    color: var(--text-color);
+
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.tab-item__desc {
+    color: var(--text-color);
+
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.student,
+.tab-item__desc + .tab-item__desc {
+    margin-top: 18px;
+}
+
+.student {
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--text-color);
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.student__rating-icon.active {
+    color: var(--primary-color);
+}
+
+.content__wrapper,
+.overview-list {
+    margin-top: 36px;
+}
+
+.overview-list-list {
+    list-style: none;
+}
+
+.overview-list-item {
+    position: relative;
+    padding-left: 30px;
+    color: #626262;
+
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+
+.overview-list-item + .overview-list-item {
+    margin-top: 16px;
+}
+
+.overview-list-item i {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    color: var(--primary-color);
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.content__item {
+    border-top: 1px solid #dcdacb;
+    border-left: 1px solid #dcdacb;
+    border-right: 1px solid #dcdacb;
+    background-color: rgba(0,0,0, 0.03);
+}
+
+.content__item:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.content__item:last-child {
+    border-bottom: 1px solid #dcdacb;
+
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.content__lesson {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    
+}
+
+.content__lesson:hover {
+    cursor: pointer;
+}
+
+.content__lesson-icon {
+    margin-right: 16px;
+    font-size: 1.2rem;
+
+    transform: rotate(0);
+    transition: all ease 0.4s;
+
+    will-change: transform;
+}
+
+.content__lesson.active .content__lesson-icon {
+    transform: rotate(-180deg);
+    will-change: transform;
+}
+
+.content__lesson-name {
+    color: var(--text-color);
+
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.lesson-time,
+.content__lesson-desc {
+    margin-left: auto;
+
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.content__lesson-detail {
+    padding: 0 24px;
+
+    background-color: var(--white-color);
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+.content__lesson-detail.active {
+    padding: 16px 24px;
+}
+
+.lesson {
+    display: flex;
+    align-items: center;
+}
+
+.lesson + .lesson {
+    margin-top: 16px;
+}
+
+.lesson-icon:hover,
+.lesson-name:hover {
+    cursor: pointer;
+}
+
+.lesson-icon:hover {
+    border: 2px solid #171F32;
+
+    background-color: #171F32;
+
+    transition: border-color ease 0.8s;
+}
+
+.lesson-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding-left: 6px;
+    border-radius: 50%;
+    
+    color: var(--primary-color);
+    
+    font-size: 3rem;
+    line-height: 40px;
+    text-align: center;
+
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+}
+
+.lesson-name {
+    padding-left: 30px;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.instructor__name {
+    color: var(--primary-color);
+
+    font-size: 2.2rem;
+    font-weight: 500;
+}

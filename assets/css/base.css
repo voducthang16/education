@@ -65,8 +65,9 @@ b {
     padding: 10px 0;
 
     opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     visibility: hidden;
-    transition: all ease 0.2s;
+    transition: all ease 0.4s;
 }
 
 .scroll-to-top.active {
@@ -102,5 +103,31 @@ b {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes grow {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: block;
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
     }
 }
