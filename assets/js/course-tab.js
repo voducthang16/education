@@ -43,3 +43,9 @@ lessons.forEach((lesson, index) => {
         })
     }
 });
+
+
+const iconClick = $('#icon-ytb');
+iconClick.onclick = function() {
+    window.open("https://youtu.be/l2nx7WKOG7g?list=RDl2nx7WKOG7g");
+}

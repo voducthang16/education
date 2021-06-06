@@ -289,4 +289,31 @@
         margin-top: 8px;
     }
     /* END BLOG */
+    /* Start Course single */
+    .course-single {
+        width: 80%;
+    }
+
+    .homepage__title-single {
+        margin-bottom: 14px;
+
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .content__lesson-desc {
+        margin-left: 8px;
+
+        line-height: 1.3;
+    }
+
+    .instructor__info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instructor__info-img {
+        margin-bottom: 16px;
+    }
+    /* End Course Single */
 }
