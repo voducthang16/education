@@ -72,8 +72,8 @@ faqQuestions.forEach(question => {
         const panel = question.nextElementSibling;
         height = panel.scrollHeight;
 
-        if (!$('.faq__question.active') === false) {
-            if ($('.faq__question.active') == e.target) {
+        if (!!$('.faq__question.active')) {
+            if ($('.faq__question.active') === e.target) {
                 removeClass();
                 return;
             };
@@ -89,13 +89,7 @@ faqQuestions.forEach(question => {
 document.addEventListener('click', e => {
     const target = e.target;
     if (!target.matches('.faq__question')) {
-        faqQuestions.forEach(ques => {
-            ques.classList.remove('active');
-        });
-        faqAnswers.forEach(ans => {
-            ans.classList.remove('active');
-            ans.style.maxHeight = 0;
-        });
+        removeClass();
     }
 
     // Youtube
