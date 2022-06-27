@@ -88,7 +88,7 @@ faqQuestions.forEach(question => {
 
 document.addEventListener('click', e => {
     const target = e.target;
-    if (!target.matches('.faq__question')) {
+    if (!target.matches('.faq__question') && !!$$('.faq__question.active')) {
         removeClass();
     }
 

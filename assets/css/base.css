@@ -43,10 +43,6 @@ b {
     transition: all ease 0.2s;
 }
 
-.btn:hover {
-    background-color: #171F32;
-}
-
 .btn--size-s {
     padding: 12px 16px;
 }
@@ -129,5 +125,11 @@ b {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .btn:hover {
+        background-color: #171F32;
     }
 }

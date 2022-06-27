@@ -58,10 +58,6 @@
     will-change: transform;
 }
 
-.faq__question:hover {
-    cursor: pointer;
-}
-
 .faq__item-icon {
     display: inline-block;
     margin-right: 16px;
@@ -127,7 +123,15 @@
     transform: rotate(90deg);
 }
 
-.faq__ytb-btn:hover {
-    border: 2px solid #171F32;
-    transition: border-color ease 0.4s;
+
+
+@media (hover: hover) and (pointer: fine) {
+    .faq__question:hover {
+        cursor: pointer;
+    }
+
+    .faq__ytb-btn:hover {
+        border: 2px solid #171F32;
+        transition: border-color ease 0.4s;
+    }
 }

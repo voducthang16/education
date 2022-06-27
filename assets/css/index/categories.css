@@ -34,10 +34,6 @@
     will-change: transform;
 }
 
-.cate-item:hover {
-    transform: translateY(-8px);
-}
-
 .cate-item::before {
     content: "";
     position: absolute;
@@ -86,10 +82,6 @@
     transition: all ease 0.2s;
 }
 
-.cate-content__link:hover {
-    color: var(--primary-color);
-}
-
 .cate-content__title {
     color: var(--white-color);
 
@@ -106,4 +98,14 @@
 .cate--cta {
     text-align: center;
     font-size: 2rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .cate-content__link:hover {
+        color: var(--primary-color);
+    }
+    
+    .cate-item:hover {
+        transform: translateY(-8px);
+    }
 }

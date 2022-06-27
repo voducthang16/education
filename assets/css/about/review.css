@@ -28,6 +28,7 @@
 .review__wrapper {
     display: flex;
     align-items: center;
+    min-height: 476px;
     padding: 30px;
 
     background-color: #f3f8f9;

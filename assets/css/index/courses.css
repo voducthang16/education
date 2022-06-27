@@ -49,11 +49,6 @@
     padding: 8px 10px !important;
 }
 
-.courses-item:hover .courses-item__img img {
-    transform: scale(1.1);
-    will-change: transform;
-}
-
 .courses-item__img {
     overflow: hidden;
 }
@@ -82,11 +77,6 @@
     transition: all ease 0.2s;
 }
 
-.courses-item__rating-icon:hover {
-    cursor: pointer;
-    filter: brightness(1.2);
-}
-
 .courses-item__rating-icon.active {
     color: #fcb903;
 }
@@ -109,9 +99,7 @@
     -webkit-line-clamp: 2;
 }
 
-.course-item__title:hover {
-    color: var(--primary-color);
-}
+
 
 .courses-item-footer {
     display: flex;
@@ -128,4 +116,20 @@
 .courses__lessons i {
     color: var(--primary-color);
     margin-right: 6px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .course-item__title:hover {
+        color: var(--primary-color);
+    }
+
+    .courses-item__rating-icon:hover {
+        cursor: pointer;
+        filter: brightness(1.2);
+    }
+
+    .courses-item:hover .courses-item__img img {
+        transform: scale(1.1);
+        will-change: transform;
+    }
 }

@@ -1,5 +1,5 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
+// const $ = document.querySelector.bind(document);
+// const $$ = document.querySelectorAll.bind(document);
 
 const tabs = $$('.course-header__title');
 const panes = $$('.tab-item');
